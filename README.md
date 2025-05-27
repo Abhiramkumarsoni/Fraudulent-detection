@@ -1,9 +1,9 @@
 # Fraudulent-detection
 
-📌 Objective:
+Objective:
 To build a machine learning model that detects fraudulent financial transactions and identifies patterns indicating fraudulent behavior. The goal is to improve detection accuracy and help financial institutions minimize fraud losses.
 
-🗃️ Dataset Overview:
+Dataset Overview:
 Source: Transactional data containing features of each transaction.
 
 Key Columns:
@@ -24,7 +24,7 @@ isFraud: Target variable (1 if fraudulent, 0 otherwise).
 
 isFlaggedFraud: Indicates if the system flagged the transaction.
 
-🔧 Data Preprocessing & Feature Engineering:
+Data Preprocessing & Feature Engineering:
 Handled Missing & Anomalous Values: Cleaned irrelevant or corrupted entries.
 
 Engineered New Features:
@@ -39,14 +39,14 @@ Encoded Categorical Variables: Converted transaction types to numeric form.
 
 Scaling: Normalized numerical features to bring uniformity.
 
-📊 Exploratory Data Analysis (EDA):
+Exploratory Data Analysis (EDA):
 Analyzed class imbalance: Fraud cases are rare compared to normal transactions.
 
 Studied transaction types with higher fraud probability (TRANSFER and CASH_OUT).
 
 Observed abnormal balance patterns in fraud cases.
 
-🧠 Model Building:
+Model Building:
 Tried multiple models to compare performance:
 
 Logistic Regression
@@ -63,7 +63,7 @@ Oversampling (SMOTE)
 
 Adjusting class weights
 
-📈 Evaluation Metrics:
+Evaluation Metrics:
 Used metrics suitable for imbalanced classification:
 
 Precision, Recall
@@ -76,7 +76,7 @@ ROC-AUC Score
 
 Focused more on Recall to minimize false negatives (fraud missed).
 
-🔍 Key Findings:
+Key Findings:
 Most frauds occur in TRANSFER and CASH_OUT types.
 
 Sudden drop in sender balance and unusual destination balances are good fraud indicators.
